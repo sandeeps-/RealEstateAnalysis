@@ -26,5 +26,9 @@ for I = 1:M
     actual_investment = down_payment + total_payment + property_tax_Iyears + misc_costs_per_year * I + insurance_cost_per_year * I;
     profit_percentage(I) = ((actual_profit / actual_investment) ^ (1/I) - 1) * 100;
 end
-plot(1:M, profit_percentage)
+plot(1:M, profit_percentage, '-bx','LineWidth',2,...
+    'MarkerSize',7,...
+    'MarkerEdgeColor','r');
+ylabel('profit in percentage');
+xlabel('time in years');
 grid on;
