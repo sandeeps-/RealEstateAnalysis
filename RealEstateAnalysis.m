@@ -3,7 +3,7 @@ purchase_price = 900e3;
 down_payment = 180e3;
 beginning_principal = purchase_price - down_payment;
 real_estate_appr = 1.09; %percentage
-loan_rate = 4; %percentage
+loan_rate = 3.3; %percentage
 inflation = 1.0225;
 N = 30;
 M = 30; % selling after M years; M <= N
